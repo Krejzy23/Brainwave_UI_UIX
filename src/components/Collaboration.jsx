@@ -14,7 +14,7 @@ const Collaboration = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{once: 'false', amount: 0.25}}
+      viewport={{once: false, amount: 0.25}}
     >
       <motion.div className="max-w-[25rem]" variants={fadeIn('right', 'tween', 0.4, 1)}>
         <h2 className="h2 mb-4 md:mb-8">Ai Chat App seamless collaboration</h2>

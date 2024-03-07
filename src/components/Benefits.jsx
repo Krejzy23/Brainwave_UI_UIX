@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { fadeIn , staggerContainer } from '../../utils/motion';
 
 
+
 const Benefits = ({ index }) => {
   return (
     <Section id="features">
@@ -15,7 +16,7 @@ const Benefits = ({ index }) => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{once: 'false', amount: 0.25}}
+        viewport={{once: false, amount: 0.25}}
       />
 
       <div className="container relative z-2">
@@ -30,7 +31,7 @@ const Benefits = ({ index }) => {
               variants={fadeIn('up', 'spring', index * 0.5, 1)}
               initial="hidden"
               whileInView="show"
-              viewport={{once: 'false', amount: 0.25}}
+              viewport={{once: false, amount: 0.25}}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,

@@ -15,7 +15,7 @@ const Pricing = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{once: 'false', amount: 0.25}}
+      viewport={{once: false, amount: 0.25}}
     >
       <motion.div 
         className="flex relative justify-center mb-[6.5rem] md:flex lg:flex sm:scale-50" 

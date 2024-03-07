@@ -1,7 +1,6 @@
-import { TypingText } from "./CustomTexts"
 import Tagline from "./Tagline";
 import { motion } from 'framer-motion';
-import { slideIn, staggerContainer ,textVariant } from '../../utils/motion';
+import { textVariant } from '../../utils/motion';
 
 const Heading = ({ className, title ,text, tag }) => {
   return (

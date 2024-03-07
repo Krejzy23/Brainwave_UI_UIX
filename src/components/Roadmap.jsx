@@ -5,20 +5,34 @@ import { roadmap } from '../constants';
 import { check2, grid, loading1 } from '../assets';
 import TagLine from './Tagline';
 import { Gradient } from './design/Roadmap';
+import { motion } from 'framer-motion';
+import { fadeIn , staggerContainer } from '../../utils/motion';
 
-const Roadmap = () => {
+const Roadmap = ({ index }) => {
   return (
     <Section 
       crosses 
       className="overflow-hidden" 
       id="roadmap"
     >
-      <div className="container md:pb-10">
+      <motion.div 
+        className="container md:pb-10"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: false, amount: 0.25}}
+      >
         <Heading 
           tag="Ready to get started" 
           title="What we're working on"
         />
-        <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
+        <motion.div 
+          className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]"
+          variants={fadeIn('up', 'spring', index * 0.5, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: false, amount: 0.25}}
+        >
           {roadmap.map((item) => {
             const status = item.status === "done" ? "Done" : "In progress";
 
@@ -31,7 +45,9 @@ const Roadmap = () => {
                     : "bg-n-6"
                 }`}
               >
-                <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
+                <div 
+                  className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15"
+                >
                   <div className="absolute top-0 left-0 max-w-full">
                     <img 
                       src={grid}
@@ -75,12 +91,12 @@ const Roadmap = () => {
             )
           })}
           <Gradient />
-        </div>
+        </motion.div>
     
         <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
           <Button href="/roadmap">Our roadmap</Button>
         </div>
-      </div>
+      </motion.div>
     </Section>
   )
 }
