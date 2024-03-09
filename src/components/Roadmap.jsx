@@ -6,7 +6,7 @@ import { check2, grid, loading1 } from '../assets';
 import TagLine from './Tagline';
 import { Gradient } from './design/Roadmap';
 import { motion } from 'framer-motion';
-import { fadeInOut , slideAndFade, staggerContainer } from '../../utils/motion';
+import { fadeInOut , staggerContainer } from '../../utils/motion';
 
 const Roadmap = () => {
   return (

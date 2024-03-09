@@ -1,4 +1,4 @@
-import { benefits } from "../constants";
+import { benefits } from "../constants/index";
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
@@ -9,7 +9,7 @@ import { fadeIn , staggerContainer } from '../../utils/motion';
 
 
 
-const Benefits = ({ index }) => {
+const Benefits = () => {
   return (
     <Section id="features">
       <motion.div
@@ -26,7 +26,7 @@ const Benefits = ({ index }) => {
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
-          {benefits.map((item) => (
+          {benefits.map((item , index) => (
             <motion.div
               variants={fadeIn('up', 'spring', index * 0.5, 1)}
               initial="hidden"
