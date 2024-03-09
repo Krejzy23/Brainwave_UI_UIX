@@ -3,6 +3,8 @@ import {
     benefitIcon2,
     benefitIcon3,
     benefitIcon4,
+    benefitCard1,
+
     benefitImage2,
     chromecast,
     disc02,
@@ -99,7 +101,6 @@ import {
       date: "May 2023",
       status: "done",
       imageUrl: roadmap1,
-      colorful: true,
     },
     {
       id: "1",
@@ -116,6 +117,7 @@ import {
       date: "May 2023",
       status: "done",
       imageUrl: roadmap3,
+      colorful: true,
     },
     {
       id: "3",
@@ -247,7 +249,7 @@ import {
       id: "0",
       title: "Ask anything",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./src/assets/benefits/card-1.svg",
+      backgroundUrl: benefitCard1,
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
 
