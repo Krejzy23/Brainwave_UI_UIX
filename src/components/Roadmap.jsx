@@ -6,9 +6,9 @@ import { check2, grid, loading1 } from '../assets';
 import TagLine from './Tagline';
 import { Gradient } from './design/Roadmap';
 import { motion } from 'framer-motion';
-import { fadeIn , staggerContainer } from '../../utils/motion';
+import { fadeInOut , slideAndFade, staggerContainer } from '../../utils/motion';
 
-const Roadmap = ({ index }) => {
+const Roadmap = () => {
   return (
     <Section 
       crosses 
@@ -28,10 +28,10 @@ const Roadmap = ({ index }) => {
         />
         <motion.div 
           className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]"
-          variants={fadeIn('up', 'spring', index * 0.5, 1)}
+          variants={fadeInOut(0.3, 0.5)}
           initial="hidden"
           whileInView="show"
-          viewport={{once: false, amount: 0.25}}
+          viewport={{once: true, amount: 0.25}}
         >
           {roadmap.map((item) => {
             const status = item.status === "done" ? "Done" : "In progress";
