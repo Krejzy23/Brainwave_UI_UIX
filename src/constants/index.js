@@ -256,7 +256,6 @@ import {
       backgroundUrl: benefitCard1,
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
-      colorful: true,
     },
     {
       id: "1",
@@ -274,7 +273,6 @@ import {
       backgroundUrl: benefitCard3,
       iconUrl: benefitIcon3,
       imageUrl: benefitImage2,
-      colorful: true,
     },
     {
       id: "3",
@@ -284,7 +282,6 @@ import {
       iconUrl: benefitIcon4,
       imageUrl: benefitImage2,
       light: true,
-      colorful: true,
     },
     {
       id: "4",
@@ -293,7 +290,6 @@ import {
       backgroundUrl: benefitCard5,
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
-      colorful: true,
     },
     {
       id: "5",
@@ -302,7 +298,6 @@ import {
       backgroundUrl: benefitCard6,
       iconUrl: benefitIcon2,
       imageUrl: benefitImage2,
-      colorful: true,
     },
   ];
   
