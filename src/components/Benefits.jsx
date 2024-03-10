@@ -27,7 +27,7 @@ const Benefits = () => {
 
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item , index) => (
-            <motion.div
+            <div
               variants={fadeIn('up', 'spring', index * 0.5, 1)}
               initial="hidden"
               whileInView="show"
@@ -73,7 +73,7 @@ const Benefits = () => {
               </div>
 
               <ClipPath />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
