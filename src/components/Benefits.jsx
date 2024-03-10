@@ -33,7 +33,7 @@ const Benefits = () => {
               initial="hidden"
               whileInView="show"
               viewport={{once: false, amount: 0.25}}
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+              className="relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{ backgroundImage: `url(${item.backgroundUrl})` }}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
