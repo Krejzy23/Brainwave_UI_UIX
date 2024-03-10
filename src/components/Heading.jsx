@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Tagline from "./Tagline";
 import { motion } from 'framer-motion';
 import { textVariant } from '../../utils/motion';
@@ -15,5 +16,12 @@ const Heading = ({ className, title ,text, tag }) => {
     </div>
   )
 }
+
+Heading.propTypes = {
+  className: PropTypes.string, 
+  title: PropTypes.string, 
+  text: PropTypes.string, 
+  tag: PropTypes.string, 
+};
 
 export default Heading

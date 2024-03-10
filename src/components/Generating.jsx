@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { loading } from "../assets";
 import { motion } from 'framer-motion';
 import { TypingText } from '../components/CustomTexts';
@@ -19,5 +20,8 @@ const Generating = ({ className }) => {
     </motion.div>
   )
 }
+Generating.propTypes = {
+  className: PropTypes.string, 
+};
 
 export default Generating

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { companyLogos } from "../constants";
 import { TypingText } from '../components/CustomTexts';
 
@@ -22,6 +23,10 @@ const CompanyLogos = ({ className }) => {
       </ul>
     </div>
   );
+};
+
+CompanyLogos.propTypes = {
+  className: PropTypes.string,
 };
 
 export default CompanyLogos;

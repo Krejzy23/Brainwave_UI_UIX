@@ -1,11 +1,10 @@
-import React from 'react';
 import Section from './Section';
 import { collabContent, collabText ,collabApps } from '../constants';
 import { brainwaveSymbol, check } from '../assets';
 import Button from './Button';
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 import { motion } from 'framer-motion';
-import { staggerContainer,fadeIn ,planetVariants ,textVariant} from '../../utils/motion';
+import { staggerContainer,fadeIn ,planetVariants } from '../../utils/motion';
 
 const Collaboration = () => {
   return <Section crosses>

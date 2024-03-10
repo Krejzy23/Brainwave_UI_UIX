@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const MenuSvg = ({ openNavigation }) => {
   return (
     <svg
@@ -26,6 +28,9 @@ const MenuSvg = ({ openNavigation }) => {
       />
     </svg>
   );
+};
+MenuSvg.propTypes = {
+  openNavigation: PropTypes.bool.isRequired, 
 };
 
 export default MenuSvg;

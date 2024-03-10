@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import { MouseParallax } from "react-just-parallax";
-
 import PlusSvg from "../../assets/svg/PlusSvg";
 
 export const Gradient = () => {
@@ -98,4 +98,7 @@ export const BackgroundCircles = ({ parallaxRef }) => {
       </MouseParallax>
     </div>
   );
+};
+BackgroundCircles.propTypes = {
+  parallaxRef: PropTypes.oneOfType([PropTypes.func, PropTypes.shape({ current: PropTypes.any })]), // 'parallaxRef' může být funkce nebo objekt s vlastností current
 };

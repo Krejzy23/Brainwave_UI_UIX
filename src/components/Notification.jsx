@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { notificationImages } from "../constants";
 import { notification1 } from "../assets";
 
@@ -36,6 +37,11 @@ const Notification = ({ className, title }) => {
       </div>
     </div>
   )
+}
+
+Notification.propTypes = {
+  className: PropTypes.string, 
+  title: PropTypes.string, 
 }
 
 export default Notification;

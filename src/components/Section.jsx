@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import SectionSvg from '../assets/svg/SectionSvg'
 
 const Section = ({
@@ -28,11 +29,20 @@ const Section = ({
           <div 
             className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1 ${crossesOffset && crossesOffset} pointer-events-none lg:block xl:left-10 right-10`}
           />
-          <SectionSvg crossesOffset={crossesOffset}/>
+          <SectionSvg crossesOffset={crossesOffset} />
         </>
       )}
     </div>
   );
+};
+
+Section.propTypes = {
+  className: PropTypes.string, 
+  id: PropTypes.string, 
+  crosses: PropTypes.bool, 
+  crossesOffset: PropTypes.string, 
+  customPaddings: PropTypes.string, 
+  children: PropTypes.node 
 };
 
 export default Section;

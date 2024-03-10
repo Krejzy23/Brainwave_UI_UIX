@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import { textContainer, textVariant2 } from '../../utils/motion'
 
@@ -14,6 +15,11 @@ export const TypingText = ({ title, textStyles }) => (
   </motion.p>
 );
 
+TypingText.propTypes = {
+  title: PropTypes.string.isRequired, 
+  textStyles: PropTypes.string,
+};
+
 export const TitleText = ({ title, textStyles }) => (
   <motion.h2
     variants={textVariant2}
@@ -25,3 +31,8 @@ export const TitleText = ({ title, textStyles }) => (
 
   </motion.h2>
 );
+
+TitleText.propTypes = {
+  title: PropTypes.string.isRequired, 
+  textStyles: PropTypes.string, 
+};
