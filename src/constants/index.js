@@ -35,6 +35,7 @@ import {
     twitter,
     yourlogo,
   } from "../assets";
+
   import benefitCard1 from "../assets/benefits/card-1.svg";
   import benefitCard2 from "../assets/benefits/card-2.svg";
   import benefitCard3 from "../assets/benefits/card-3.svg";
@@ -253,7 +254,7 @@ import {
       id: "0",
       title: "Ask anything",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: benefitCard1,
+      backgroundUrl: "./benefits/card-1.svg",
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
       light: false,
