@@ -28,13 +28,13 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item , index) => (
             <motion.div
+              key={item.id}
               variants={fadeIn('up', 'spring', index * 0.5, 1)}
               initial="hidden"
               whileInView="show"
               viewport={{once: false, amount: 0.25}}
-              className="block relative p-0.5  bg-[length:100%_100%] md:max-w-[24rem]"
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{ backgroundImage: `url(${item.backgroundUrl})` }}
-              key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h5 mb-5">{item.title}</h5>
