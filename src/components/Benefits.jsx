@@ -1,4 +1,3 @@
-import { benefits } from "../constants/index";
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
@@ -7,6 +6,63 @@ import ClipPath from "../assets/svg/ClipPath";
 import { motion } from 'framer-motion';
 import { fadeIn , staggerContainer } from '../../utils/motion';
 
+
+export const benefits = [
+  {
+    id: "0",
+    title: "Ask anything",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    backgroundUrl: benefitCard1,
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+    light: false,
+  },
+  {
+    id: "1",
+    title: "Improve everyday",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    backgroundUrl: benefitCard2,
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "2",
+    title: "Connect everywhere",
+    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    backgroundUrl: benefitCard3,
+    iconUrl: benefitIcon3,
+    imageUrl: benefitImage2,
+    light: false,
+  },
+  {
+    id: "3",
+    title: "Fast responding",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    backgroundUrl: benefitCard4,
+    iconUrl: benefitIcon4,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "4",
+    title: "Ask anything",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    backgroundUrl: benefitCard5,
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+    light: false,
+  },
+  {
+    id: "5",
+    title: "Improve everyday",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    backgroundUrl: benefitCard6,
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+    light: false,
+  },
+];
 
 
 const Benefits = () => {
@@ -33,7 +89,7 @@ const Benefits = () => {
               whileInView="show"
               viewport={{once: false, amount: 0.25}}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-              style={{ background: `url(${item.backgroundUrl})` }}
+              style={{ backgroundImage: `url(${item.backgroundUrl})` }}
               key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
