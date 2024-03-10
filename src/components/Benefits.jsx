@@ -1,10 +1,18 @@
 import Heading from "./Heading";
+import { benefitIcon1,benefitIcon2,benefitIcon3,benefitIcon4 } from "../assets";
+import { benefitImage2 } from "../assets";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import { motion } from 'framer-motion';
 import { fadeIn , staggerContainer } from '../../utils/motion';
+import benefitCard1 from "../assets/benefits/card-1.svg";
+import benefitCard2 from "../assets/benefits/card-2.svg";
+import benefitCard3 from "../assets/benefits/card-3.svg";
+import benefitCard4 from "../assets/benefits/card-4.svg";
+import benefitCard5 from "../assets/benefits/card-5.svg";
+import benefitCard6 from "../assets/benefits/card-6.svg";
 
 
 export const benefits = [
