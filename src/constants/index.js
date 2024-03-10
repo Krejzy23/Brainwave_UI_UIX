@@ -4,6 +4,12 @@ import {
     benefitIcon3,
     benefitIcon4,
     benefitImage2,
+    benefitCard1,
+    benefitCard2,
+    benefitCard3,
+    benefitCard4,
+    benefitCard5,
+    benefitCard6,
     chromecast,
     disc02,
     discord,
@@ -35,13 +41,6 @@ import {
     twitter,
     yourlogo,
   } from "../assets";
-
-  import benefitCard1 from "../assets/benefits/card-1.svg";
-  import benefitCard2 from "../assets/benefits/card-2.svg";
-  import benefitCard3 from "../assets/benefits/card-3.svg";
-  import benefitCard4 from "../assets/benefits/card-4.svg";
-  import benefitCard5 from "../assets/benefits/card-5.svg";
-  import benefitCard6 from "../assets/benefits/card-6.svg";
   
   export const navigation = [
     {
@@ -112,7 +111,7 @@ import {
       id: "1",
       title: "Gamification",
       text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-      date: "May 2023",
+      date: "May 2024",
       status: "progress",
       imageUrl: roadmap2,
     },
@@ -128,7 +127,7 @@ import {
       id: "3",
       title: "Integration with APIs",
       text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-      date: "May 2023",
+      date: "June 2024",
       status: "progress",
       imageUrl: roadmap4,
       colorful: true,
@@ -254,7 +253,7 @@ import {
       id: "0",
       title: "Ask anything",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./benefits/card-1.svg",
+      backgroundUrl: benefitCard1,
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
       light: false,
