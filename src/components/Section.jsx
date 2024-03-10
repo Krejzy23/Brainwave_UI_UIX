@@ -41,7 +41,7 @@ Section.propTypes = {
   id: PropTypes.string, 
   crosses: PropTypes.bool, 
   crossesOffset: PropTypes.string, 
-  customPaddings: PropTypes.string, 
+  customPaddings: PropTypes.bool, 
   children: PropTypes.node 
 };
 
